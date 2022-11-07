@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'dotted';
+    src: url('./DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    background-color: black;
+    color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: 'dotted';
+}
+
+#calendar {
+    margin : 20px;
+}
+
+
+/* 화면 정중앙 배치*/
