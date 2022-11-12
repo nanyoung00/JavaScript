@@ -11,7 +11,7 @@ function calendar(){
     let day = date.getDay();
     let week = ['일','월','화','수','목','금','토'];
     
-    calendarTarget.innerText = `${month+1}월 ${clockDate}일 ${week[day]}요일`
+    calendarTarget.innerText = `${2000+year-100}년 ${month+1}월 ${clockDate}일 ${week[day]}요일`
 
 }
 
@@ -24,6 +24,9 @@ function nowClock(){
 
     clockTarget.innerText = 
     `${hour<10 ? `0${hour}`: hour} : ${min < 10 ? `0${min}`:min} : ${sec<10 ? `0${sec}`:sec}`;
+
+
+   
 }
 
 
