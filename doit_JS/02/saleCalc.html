@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="saleCalc.css" />
+    <title>Sale Price Calculator</title>
+</head>
+<body>
+    <div id="contents">
+    <ul>
+        <li>
+            <label for="price">원래 가격</label>
+            <input type="text" id="price">원
+        </li>
+        <li>
+            <label for="rate">할인율</label>
+            <input onkeyup="enterKey()" type="text" id="rate">%
+        </li>
+        <li>
+            <button onclick="showPrice()">할인 가격 계산하기</button>
+        </li>
+    </ul>
+    <div id="showResult"></div>
+    </div>
+    <script>
+        function showPrice() {
+            let originPrice = document.querySelector("#price").value;
+            let rate = document.querySelector("#rate").value;
+            let savedPrice = originPrice * (rate / 100);
+            let resultPrice = originPrice - savedPrice;
+            document.querySelector("#showResult").innerHTML = "상품의 원래 가격은" + originPrice + "원이고, 할인율은" + rate + "%입니다.<br>" + savedPrice + "원을 절약한" + resultPrice + "원에 살 수 있습니다.";
+        }
+        
+        function enterKey() {
+            if(window.event.keyCode == 13) {
+                showPrice();
+            }
+        }
+    </script> 
+</body>
+</head>
