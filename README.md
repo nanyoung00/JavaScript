@@ -1,5 +1,5 @@
 # JavaScript
-JavaScript를 연습한 실습파일
+JavaScript를 연습한 실습파일 <br>
 HTML+CSS+JS 꾸준히 연습 중
 
 --------------------------------
