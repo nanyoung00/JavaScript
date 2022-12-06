@@ -1,10 +1,33 @@
+const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
-// HTML에서 요소를 가져온다
+const greeting = document.querySelector("#greeting");
 
-function onLoginBtnClick() {
-    console.dir(loginInput.value); // input의 내용 가져오기, console.dir()은 객체를 가져올 때 쓴다
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
+
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
+    // greeting.innerText = "Hello " + username; 아래와 동일한 기능 수행
+    paintGreetings(username);
+} // 엔터를 하거나 클릭할 때 일어나는 event
+
+function paintGreetings(username) {
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-loginButton.addEventListener("click", onLoginBtnClick);
-// 클릭했을 떄의 event, loginBUtton에 대한 click을 감지할 준비가 되었다
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if(savedUsername === null) {
+    // show the form
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+    // show the greetings
+    paintGreetings(savedUsername);
+}
+
