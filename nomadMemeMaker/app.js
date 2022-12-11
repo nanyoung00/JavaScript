@@ -1,3 +1,4 @@
+const saveBtn = document.getElementById("save");
 const textInput = document.getElementById("text");
 const fileInput = document.getElementById("file");
 const modeBtn = document.getElementById("mode-btn");
@@ -53,10 +54,10 @@ function onColorClick(event) {
 function onModeClick() {
     if(isFilling) {
         isFilling = false;
-        modeBtn.innerText = "Fill";
+        modeBtn.innerText = "🪣 Fill";
     } else {
         isFilling = true;
-        modeBtn.innerText = "Draw";
+        modeBtn.innerText = "🖍 Draw";
     }
 }
 function onCanvasClick() {
@@ -72,7 +73,7 @@ function onDestroyClick() {
 function onEraserClick() {
     ctx.strokeStyle = "white";
     isFilling = false;
-    modeBtn.innerText = "Fill";
+    modeBtn.innerText = "🪣 Fill";
 }
 function onFileChange(event) {
     const file = event.target.files[0];
@@ -94,7 +95,13 @@ function onDoubleClick(event) {
     ctx.restore();
     }
 }
-
+function onSaveClick() {
+    const url = canvas.toDataURL();
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "myDrawing.png";
+    a.click();
+}
 
 canvas.addEventListener("dblclick", onDoubleClick);
 canvas.addEventListener("mousemove", onMove);
@@ -113,3 +120,4 @@ modeBtn.addEventListener("click", onModeClick);
 destroyBtn.addEventListener("click", onDestroyClick);
 eraserBtn.addEventListener("click", onEraserClick);
 fileInput.addEventListener("change", onFileChange);
+saveBtn.addEventListener("click", onSaveClick);

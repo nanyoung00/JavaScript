@@ -8,34 +8,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas></canvas>
-    <input type="range" id="line-width" min="1" max="10" value="5" step="0.5" />
-    <div>
+    <div class="color-options">
         <input type="color" id="color" />
-        <div class="color-option" style="background-color: #FFC312;" data-color="#FFC312"></div>
-        <div class="color-option" style="background-color: #C4E538;" data-color="#C4E538"></div>
-        <div class="color-option" style="background-color: #FDA7DF;" data-color="#FDA7DF"></div>
-        <div class="color-option" style="background-color: #ED4C67;" data-color="#ED4C67"></div>
-        <div class="color-option" style="background-color: #F79F1F;" data-color="#F79F1F"></div>
-        <div class="color-option" style="background-color: #A3CB38;" data-color="#A3CB38"></div>
-        <div class="color-option" style="background-color: #1289A7;" data-color="#1289A7"></div>
-        <div class="color-option" style="background-color: #D980FA;" data-color="#D980FA"></div>
-        <div class="color-option" style="background-color: #B53471;" data-color="#B53471"></div>
-        <div class="color-option" style="background-color: #EE5A24;" data-color="#EE5A24"></div>
-        <div class="color-option" style="background-color: #0652DD;" data-color="#0652DD"></div>
-        <div class="color-option" style="background-color: #009432;" data-color="#009432"></div>
-        <div class="color-option" style="background-color: #833471;" data-color="#833471"></div>
-        <div class="color-option" style="background-color: #EA2027;" data-color="#EA2027"></div>
-        <div class="color-option" style="background-color: #006266;" data-color="#006266"></div>
-        <div class="color-option" style="background-color: #1B1464;" data-color="#1B1464"></div>
-        <div class="color-option" style="background-color: #5758BB;" data-color="#5758BB"></div>
-        <div class="color-option" style="background-color: #6F1E51;" data-color="#6F1E51"></div>
+            <div class="color-option" style="background-color: #C4E538;" data-color="#C4E538"></div>
+            <div class="color-option" style="background-color: #FDA7DF;" data-color="#FDA7DF"></div>
+            <div class="color-option" style="background-color: #ED4C67;" data-color="#ED4C67"></div>
+            <div class="color-option" style="background-color: #F79F1F;" data-color="#F79F1F"></div>
+            <div class="color-option" style="background-color: #1289A7;" data-color="#1289A7"></div>
+            <div class="color-option" style="background-color: #D980FA;" data-color="#D980FA"></div>
+            <div class="color-option" style="background-color: #0652DD;" data-color="#0652DD"></div>
+            <div class="color-option" style="background-color: #833471;" data-color="#833471"></div>
+            <div class="color-option" style="background-color: #EA2027;" data-color="#EA2027"></div>
+            <div class="color-option" style="background-color: #006266;" data-color="#006266"></div>
+            <div class="color-option" style="background-color: #1B1464;" data-color="#1B1464"></div>
     </div>
-    <button id="mode-btn">Fill</button>
-    <button id="destroy-btn">Destroy</button>
-    <button id="eraser-btn">Erase</button>
-    <input type="file" accept="image/*" id="file" /> 
-    <input type="text" placeholder="Write and then double click" id="text"/>
+    <canvas></canvas>
+    <div class="btns">
+        <span>✏️ Pencil Width</span>
+        <input type="range" id="line-width" min="1" max="10" value="5" step="0.5" />
+        <button id="mode-btn">🪣 Fill</button>
+        <button id="destroy-btn">💣 Destroy</button>
+        <button id="eraser-btn">❌ Erase</button>
+        <input type="text" placeholder="Add text here... :)" id="text"/>
+        <label for="file">
+            📁 Add Photo
+            <input type="file" accept="image/*" id="file" /> 
+        </label>
+        <button id="save">🖼 Save image</button>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
