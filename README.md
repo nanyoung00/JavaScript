@@ -1,9 +1,9 @@
 # JavaScript
-JavaScript를 연습한 실습파일
+JavaScript practice file collection
 
 --------------------------------
 
-- do it! js 기능 추가해서 만들기(ch4까지만)
-- 디지털 시계 웹 프로그램
-- 노마드코더 바닐라 JS로 크롬앱 만들기
-- 노마드코더 바닐라 JS로 그림앱 만들기
+- (textBook)Do it! js add option myself (~ch4)
+- Digital clock web program
+- Nomad coder Making Chrome app for Vanilla JS
+- Nomad coder Making Meme maker for Vanilla JS
