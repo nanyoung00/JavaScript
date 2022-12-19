@@ -1,5 +1,5 @@
 # JavaScript
-JavaScript practice file collection
+JavaScript practice project collection
 
 --------------------------------
 
