@@ -7,3 +7,4 @@ JavaScript practice project collection
 - Digital clock web program
 - Making Chrome app "Momentum" for Vanilla JS
 - Making Meme maker for Vanilla JS
+- Dream Jeju Web site for Vanilla JS
