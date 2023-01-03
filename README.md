@@ -8,3 +8,5 @@ JavaScript practice project collection
 - Making Chrome app "Momentum" for Vanilla JS
 - Making Meme maker for Vanilla JS
 - Dream Jeju Web site for Vanilla JS
+- Deep Dive practice
+
