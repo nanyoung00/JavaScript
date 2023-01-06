@@ -1,0 +1,80 @@
+* {
+    /* 마진값 초기화 */
+    margin: 0;
+    /* 패딩값 초기화 */
+    padding: 0;
+    /* 박스 영역은 테두리까지 지정 */
+    box-sizing: border-box;
+}
+
+#container {
+    /* 화면 중앙에 배치 */
+    margin: 0 auto;
+    /* 너비 지정 */
+    width: 1200px;
+}
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+/* 로고 영역 */
+#logo {
+    /* 왼쪽으로 플로팅 */
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: indigo;
+}
+
+/* 내비게이션 영역 */
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    background-color: green;
+}
+
+/* 이미지 슬라이드 쇼 영역 */
+#slideShow {
+    /* 플로팅 해제 */
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    /* 영역 넘치면 감춤 */
+    overflow: hidden;
+}
+
+/* 콘텐츠 영역 */
+#contents {
+    width: 100%;
+    height: 300px;
+
+}
+
+/* 탭 메뉴 영역 */
+#tabMenu {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-color: violet;
+}
+
+/* 퀵 링크 영역 */
+#links {
+    float: right;
+    width: 600px;
+    height: 100%;
+    background-color: skyblue;
+}
+
+/* 푸터 영역 */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
