@@ -44,14 +44,37 @@
 
         <!-- 이미지 슬라이드 쇼 -->
         <div id="slideShow">
-
+            <div id="slides">
+                <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <!-- <button id="prev">&lang;</button>
+            <button id="next">&rang;</button> -->
+            </div>
         </div>
 
         <!-- 콘텐츠 -->
         <div id="contents">
             <!-- 탭 메뉴 -->
             <div id="tabMenu">
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label for="tab1">공지사항</label>
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2">갤러리</label>
 
+                <div id="notice" class="tabContent">
+                    <h2>공지사항 내용입니다.</h2>
+                    <ul>
+                        <li>사무실을 이전했습니다.</li>
+                        <li>[참가모집] 카약 체험에 초대합니다.</li>
+                        <li>[참가 모집] 여름 방학 기간, 오름 체험단을 모집합니다.</li>
+                        <li>겨울, 추천 여행지</li>
+                        <li>가을, 추천 여행지</li>
+                    </ul>
+                </div>
+                <div id="gallery" class="tabContent">
+                    <h2>갤러리 내용입니다.</h2>
+                </div>
             </div>
             <!-- 퀵 링크 -->
             <div id="links">
@@ -65,5 +88,6 @@
         </footer>
 
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
