@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 #container {
     /* 화면 중앙에 배치 */
     margin: 0 auto;
@@ -43,7 +47,7 @@ header {
     color: #392f31;
     font-weight: 600;
     font-size: 40px;
-    text-shadow: 0 -1px 0 #222;
+    text-shadow: 0 -1px 0 gray;
 }
 
 /* 내비게이션 영역 */
@@ -51,7 +55,64 @@ nav {
     float: right;
     width: 900px;
     height: 100px;
-    background-color: green;
+    /* 메뉴를 아래로 내리기 위함 */
+    padding-top: 40px;
+}
+
+#topMenu {
+    height: 60px;
+}
+
+#topMenu > li {
+    /* 메뉴 항목을 왼쪽으로 플로팅 */
+    float: left;
+    position: relative;
+}
+
+#topMenu > li > a {
+    /* 링크 텍스트는 블록으로 */
+    display: block;
+    color: #392f31;
+    font-weight: 600;
+    text-shadow: 0 1px #f6f9fc;
+    padding: 20px 60px;
+}
+
+#topMenu > li > a > span {
+    font-size: 0.5em;
+}
+
+#topMenu > li > a:hover {
+    color: royalblue;
+    text-shadow: 0 -1px #f6f9fc;
+}
+
+#topMenu > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    background-color: rgba(255, 255, 255, 0.6);
+    left: 50px;
+    margin: 0;
+}
+
+#topMenu > li > ul > li {
+    padding: 10px 10px 10px 30px;
+}
+
+#topMenu > li > ul > li > a {
+    font-size: 14px;
+    padding: 10px;
+    color: #000;
+}
+
+#topMenu > li:hover > ul {
+    display: block;
+    z-index: 10;
+}
+
+#topMenu > li > ul > li > a:hover {
+    color: royalblue;
 }
 
 /* 이미지 슬라이드 쇼 영역 */
