@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
+* {
     /* 마진값 초기화 */
     margin: 0;
     /* 패딩값 초기화 */
@@ -26,6 +27,7 @@ ul {
     margin: 0 auto;
     /* 너비 지정 */
     width: 1200px;
+
 }
 
 /* 헤더 영역 */
@@ -173,6 +175,7 @@ button:focus {
 #contents {
     width: 100%;
     height: 300px;
+    margin-top: 20px;
 
 }
 
@@ -184,27 +187,27 @@ button:focus {
     margin-top: 10px;
     
 }
-#tapMenu input[type="radio"] {
-    display: none;
+#tabMenu  input[type="radio"] {
+    display:none;
 }
 
-#tapMenu label {
-    display: inline-block;
-    margin: 0 0;
-    padding: 15px 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #aaa;
-    border: 1px solid transparent;
+#tabMenu label {
+    display:inline-block;
+    margin:0 0;
+    padding:15px 25px;
+    font-weight:600;
+    text-align:center;
+    color:#aaa;
+    border:1px solid transparent;
 }
-#tapMenu label:hover {
-    color: #222;
-    cursor: pointer;
+#tabMenu label:hover {
+    color:#222;
+    cursor:pointer;
 }
-#tapMenu input:checked + label {
-    color: #b00;
-    border: 1px solid #ddd;
-    background-color: #eee;
+#tabMenu input:checked + label {
+    color:#b00;
+    border:1px solid #ddd;
+    background-color:#eee;
 }
 .tabContent {
     display: none;
@@ -212,7 +215,7 @@ button:focus {
     border-top: 1px solid #ddd;
 }
 .tabContent h2 {
-    display: none;
+    display:none;
 }
 #notice ul {
     list-style: disc;
@@ -236,6 +239,7 @@ button:focus {
     float: right;
     width: 600px;
     height: 100%;
+    margin-top: 15px;
 }
 #links ul {
     padding: 0;
@@ -257,9 +261,89 @@ button:focus {
     line-height: 150px;
 }
 
+#quick-icon1 {
+    background-image:url('images/icon-1.jpg');
+}
+
+#quick-icon1 img {
+    width: 50px;
+}
+
+#quick-icon2 {
+    background-image:url('images/icon-2.jpg');
+}
+
+#quick-icon2 img {
+    width: 50px;
+}
+
+#quick-icon3 {
+    background-image:url('images/icon-3.jpg');
+}
+
+#quick-icon3 img {
+    width: 50px;
+}
+
+#links ul li a p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
 /* 푸터 영역 */
 footer {
     width: 100%;
     height: 100px;
-    background-color: gray;
+    border-top: 2px solid #222;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+#bottomMenu ul {
+    margin-top: 15px;
+}
+
+#bottomMenu ul li {
+    float: left;
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+}
+
+#bottomMenu ul li:last-child {
+    border:none;
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+    font-size: 15px;
+    color: #666;
+}
+
+#sns {
+    position: absolute;
+    right: 0;
+}
+
+#sns img {
+    width: 30px;
+}
+
+#sns ul li {
+    border: none;
+    padding: 5px;
+}
+
+#company {
+    clear: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #aaa;
 }
